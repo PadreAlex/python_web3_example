@@ -7,7 +7,7 @@ setting up the HTTP providers or WS
 """
 # web3 providers can be obtained via Infura, Alchemy or any other node providers. 
 # In this example I`m using alchemy, but it can be whatever provider you want
-web3 = Web3(Web3.HTTPProvider(f'https://eth-goerli.g.alchemy.com/v2/{api_key}')) if is_ws == False else Web3(Web3.HTTPProvider(f'wss://eth-goerli.g.alchemy.com/v2/{api_key}'))
+web3 = Web3(Web3.HTTPProvider(f'https://bsc-dataseed1.binance.org/')) if is_ws == False else Web3(Web3.HTTPProvider(f'wss://eth-goerli.g.alchemy.com/v2/{api_key}'))
 
 """
 convert private key to wallet instance
